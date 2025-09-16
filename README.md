@@ -1,30 +1,39 @@
-# ContentHub-1
+This project is a fullstack web application built with **Next.js (App Router, TypeScript)**, styled with **TailwindCSS + shadcn/ui**, and powered by **PostgreSQL (Neon)** via **Prisma/Neon serverless driver**.  
+It implements authentication with **NextAuth (Auth.js)** using Google and Facebook OAuth providers, plus JWT-based sessions.
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+---
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/rias-projects-80385a29/v0-content-hub-1)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/clEBQoXfacz)
+## 🚀 Features
+- **Authentication**
+  - Sign in with **Google** or **Facebook**
+  - Credentials provider (manual login) – optional
+  - JWT-based sessions with secure secrets
+- **Content Display**
+  - Articles (list + detail view)
+  - Videos (list + embedded player)
+- **Membership Plans**
+  - Plan A: max 5 articles & 5 videos / month
+  - Plan B: max 10 articles & 10 videos / month
+  - Plan C: unlimited content
+- **Database**
+  - PostgreSQL (via Neon)
+  - Tables for Users, Memberships, Content, Access logs
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## 🛠 Tech Stack
+- **Frontend**: Next.js 14+, React, TypeScript  
+- **Styling**: TailwindCSS + shadcn/ui components  
+- **Auth**: NextAuth (Auth.js)  
+- **Database**: PostgreSQL (Neon serverless)  
+- **ORM**: Prisma or SQL with `@neondatabase/serverless`  
+- **Deployment**: Vercel  
 
-## Deployment
+---
 
-Your project is live at:
+## 📦 Installation & Setup
 
-**[https://vercel.com/rias-projects-80385a29/v0-content-hub-1](https://vercel.com/rias-projects-80385a29/v0-content-hub-1)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/projects/clEBQoXfacz](https://v0.app/chat/projects/clEBQoXfacz)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### 1. Clone the repo
+```bash
+git clone https://github.com/andrianaria/content-hub.git
+cd content-hub
